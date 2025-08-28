@@ -15,7 +15,4 @@ phases:
       - echo Writing imagedefinitions.json file...
       - printf '[{"name":"flask-app","imageUri":"%s"}]' 414819400975.dkr.ecr.ap-south-1.amazonaws.com/flask-app:latest > imagedefinitions.json
 artifacts:
-  files: 
-  - imagedefinitions.json
-  - appspec.yml
-  - scripts/deploy.sh
+  files: imagedefinitions.json
